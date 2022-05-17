@@ -1,0 +1,132 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding-top: 60px;
+  display: flex;
+}
+
+.kanban-board {
+  display: flex;
+  padding-left: 60px;
+  height: auto;
+}
+
+.kanban-column {
+  margin-right: 30px;
+  width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.column-title {
+  background-color: dodgerblue;
+  text-align: center;
+}
+
+.column-title h3 {
+  padding: 18px 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.kanban-cards {
+  padding: 20px;
+  background-color: #fff;
+  min-height: 700px;
+}
+
+.kanban-card {
+  margin-bottom: 20px;
+  position: relative;
+  width: 240px;
+  min-height: 120px;
+  border-radius: 8px;
+  background-color: rgb(232, 232, 232);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.kanban-card::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: move;
+}
+
+.kanban-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  background-color: #dddcdc;
+}
+
+.kanban-card .card-header .card-title h4 {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.kanban-card .card-header .card-user-profile {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #f4f4f4;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.kanban-card .card-header .card-user-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kanban-card .card-content {
+  padding: 20px;
+}
+
+.kanban-card .card-content .description {
+  display: -webkit-box;
+  color: #555;
+  line-height: 110%;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.add-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 792px;
+  border: 1px dashed #999;
+  border-radius: 10px;
+}
+
+.add-column .add-btn {
+  padding: 10px 10px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  background: none;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.add-column .add-btn:hover {
+  background-color: #fff;
+}
+
+.add-column .add-btn img {
+  width: 80%;
+  height: 80%;
+}
